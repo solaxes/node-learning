@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 //create routing
 
 
-app.use(adminRoutes);
+app.use('/admin', adminRoutes);
 app.use(shopRoutes);
 
 // Setting up 404 page
